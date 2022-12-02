@@ -30,13 +30,13 @@ public class Program {
             System.out.println("Digite o numero do quarto desejado: ");
             int numQuarto = sc.nextInt();
             vetor[i] = new Cadastro(nome, email, numQuarto);
-            System.out.println("Cadastro Realizado");
             System.out.println();
         }
+        System.out.println("---------------------");
         System.out.println("Quartos Reservados: ");
         System.out.println();
         String hospede;
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i < vetor.length; i++) {
             hospede = vetor[i].toString();
             System.out.println(hospede);
         }
